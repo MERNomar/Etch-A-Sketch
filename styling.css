@@ -1,6 +1,22 @@
-body{
-    background-color: black;
+html{
+    max-width: 500px;
+    margin: auto;
 }
-h1{
-    color: wheat;
+header{
+color: wheat;
+display: block;
+text-align: center;
+}
+body{
+    background-color: #030303;
+    margin: 0;
+   
+}
+
+
+.container{
+    background-color: white;
+    width: 500x;
+    height: 500px;
+    border: red solid 5px;
 }
