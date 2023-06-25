@@ -4,23 +4,35 @@ counter = 0
 let theButtons = document.querySelectorAll(".inline")
 
 
+
 function generateNumber(){
+    
+    for (let c = 0; c <= 65; c++){
+    if (counter === 66) { listItem.style.backgroundColor = "white"}
     counter+=1        
     const randomNmuber = counter
     const listItem = document.createElement("div");
+    listItem.addEventListener("mouseover" , e => {
+        listItem.style.backgroundColor ="black";
+    })
     listItem.className = "inline";
-    const textnode = document.createTextNode(randomNmuber)
-    const rando = listItem.appendChild(textnode);
     document.querySelector(".container").appendChild(listItem);
+    console.log(listItem)
+
 }
-for (let c = 0; c <= 64; c++){
-generateNumber()
+    
 }
 
-theButtons.forEach(button => (button.addEventListener("click" , e =>{
-    console.log("hi")
-})))
-console.log(theButtons)
+
+
+
+
+
+
+
+
+
+
 
 
 
