@@ -13,20 +13,21 @@ body{
    
 }
 
-
-.container{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    
-    background-color: white;
-    width: 500x;
-    height: 500px;
-    border: red solid 5px;
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
 }
-.inline{
-    display: table;
-    background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 30px;
+
+#container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+  width: 23px;
+  background-color: wheat;
+  border: 1px solid #000000;
   text-align: center;
 }
